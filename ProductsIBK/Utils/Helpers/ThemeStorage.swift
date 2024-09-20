@@ -29,5 +29,6 @@ class ThemeStorage {
 extension ThemeStorage {
     enum ThemeKey: String {
         case tabBarColor
+        case tabBarTintColor
     }
 }

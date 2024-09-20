@@ -27,6 +27,7 @@
 		C4DF485B2C9D548200FBEF26 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF485A2C9D548200FBEF26 /* UIImageView+Extensions.swift */; };
 		C4DF485F2C9D64FB00FBEF26 /* MockProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF485E2C9D64FB00FBEF26 /* MockProductRepository.swift */; };
 		C4DF48612C9D658100FBEF26 /* ProductListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48602C9D658100FBEF26 /* ProductListViewModelTest.swift */; };
+		C4DF48632C9D708700FBEF26 /* UIColor+Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48622C9D708700FBEF26 /* UIColor+Extensiones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		C4DF485A2C9D548200FBEF26 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		C4DF485E2C9D64FB00FBEF26 /* MockProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductRepository.swift; sourceTree = "<group>"; };
 		C4DF48602C9D658100FBEF26 /* ProductListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTest.swift; sourceTree = "<group>"; };
+		C4DF48622C9D708700FBEF26 /* UIColor+Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensiones.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				C4DF485A2C9D548200FBEF26 /* UIImageView+Extensions.swift */,
+				C4DF48622C9D708700FBEF26 /* UIColor+Extensiones.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DF48632C9D708700FBEF26 /* UIColor+Extensiones.swift in Sources */,
 				C4DF483A2C9D3CD600FBEF26 /* MainTabBarViewModel.swift in Sources */,
 				C4DF485F2C9D64FB00FBEF26 /* MockProductRepository.swift in Sources */,
 				C4DF47FC2C9D2AB100FBEF26 /* AppDelegate.swift in Sources */,

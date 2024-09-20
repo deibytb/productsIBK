@@ -26,16 +26,17 @@ class MainTabBarController: UITabBarController {
 }
 
 extension MainTabBarController {
-    func updateTabBarColor(to backgroundColor: UIColor, tintColor: UIColor = .white) {
+    func updateTabBarColor(to backgroundColor: UIColor) {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = backgroundColor
         self.tabBar.standardAppearance = appearance
         self.tabBar.scrollEdgeAppearance = appearance
-        self.tabBar.tintColor = tintColor
+        self.tabBar.tintColor = backgroundColor.isDarkColor ? .white : .black
     }
     
-    func updateNavBarColor(to backgroundColor: UIColor, tintColor: UIColor = .white) {
+    func updateNavBarColor(to backgroundColor: UIColor) {
+        let tintColor: UIColor = backgroundColor.isDarkColor ? .white : .black
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = backgroundColor

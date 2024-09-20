@@ -24,7 +24,7 @@ class MenuViewController: UIViewController {
         if let savedColor = viewModel.loadSavedColor() {
             colorWell.selectedColor = savedColor
         }
-        
+        self.colorWell.supportsAlpha = false
         self.colorWell.addTarget(self, action: #selector(colorChanged), for: .valueChanged)
     }
     
