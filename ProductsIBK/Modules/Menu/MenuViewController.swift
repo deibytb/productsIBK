@@ -16,6 +16,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Menú"
         self.setupColorWell()
     }
     
@@ -32,6 +33,7 @@ class MenuViewController: UIViewController {
         
         if let tabBarController = self.tabBarController as? MainTabBarController {
             tabBarController.updateTabBarColor(to: selectedColor)
+            tabBarController.updateNavBarColor(to: selectedColor)
         }
         
         viewModel.saveColor(selectedColor)

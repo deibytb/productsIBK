@@ -20,6 +20,7 @@ class MainTabBarController: UITabBarController {
     private func loadSavedTheme() {
         if let savedColor = viewModel.loadSavedTabBarColor() {
             self.updateTabBarColor(to: savedColor)
+            self.updateNavBarColor(to: savedColor)
         }
     }
 }
@@ -32,5 +33,25 @@ extension MainTabBarController {
         self.tabBar.standardAppearance = appearance
         self.tabBar.scrollEdgeAppearance = appearance
         self.tabBar.tintColor = tintColor
+    }
+    
+    func updateNavBarColor(to backgroundColor: UIColor, tintColor: UIColor = .white) {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = backgroundColor
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: tintColor]
+        appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: tintColor]
+        
+        guard let viewControllers = self.viewControllers else { return }
+        
+        for viewController in viewControllers {
+            if let navController = viewController as? UINavigationController {
+                navController.navigationBar.standardAppearance = appearance
+                navController.navigationBar.scrollEdgeAppearance = appearance
+                navController.navigationBar.compactAppearance = appearance
+                navController.navigationBar.isTranslucent = false
+                navController.navigationBar.tintColor = tintColor
+            }
+        }
     }
 }

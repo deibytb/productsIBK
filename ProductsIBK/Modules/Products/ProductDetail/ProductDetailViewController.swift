@@ -18,15 +18,15 @@ class ProductDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.largeTitleDisplayMode = .never
         setupUI()
     }
     
     private func setupUI() {
         guard let product = self.product else { return }
         
-        self.title = product.title
         titleLabel.text = product.title
-        descriptionLabel.text = product.description
+        descriptionLabel.text = product.description + product.description
         imageView.loadImage(from: product.images.first)
     }
 }
