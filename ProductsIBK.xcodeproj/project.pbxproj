@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		C4DF47FC2C9D2AB100FBEF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF47FB2C9D2AB100FBEF26 /* AppDelegate.swift */; };
 		C4DF47FE2C9D2AB100FBEF26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF47FD2C9D2AB100FBEF26 /* SceneDelegate.swift */; };
-		C4DF48002C9D2AB100FBEF26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF47FF2C9D2AB100FBEF26 /* ViewController.swift */; };
-		C4DF48032C9D2AB100FBEF26 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4DF48022C9D2AB100FBEF26 /* Base */; };
 		C4DF48052C9D2AB200FBEF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DF48042C9D2AB200FBEF26 /* Assets.xcassets */; };
 		C4DF48082C9D2AB200FBEF26 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4DF48072C9D2AB200FBEF26 /* Base */; };
 		C4DF48132C9D2AB200FBEF26 /* ProductsIBKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48122C9D2AB200FBEF26 /* ProductsIBKTests.swift */; };
 		C4DF481D2C9D2AB200FBEF26 /* ProductsIBKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF481C2C9D2AB200FBEF26 /* ProductsIBKUITests.swift */; };
 		C4DF481F2C9D2AB200FBEF26 /* ProductsIBKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF481E2C9D2AB200FBEF26 /* ProductsIBKUITestsLaunchTests.swift */; };
+		C4DF48302C9D30F900FBEF26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF482F2C9D30F900FBEF26 /* MainTabBarController.swift */; };
+		C4DF48342C9D327E00FBEF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DF48012C9D2AB100FBEF26 /* Main.storyboard */; };
+		C4DF48372C9D34B600FBEF26 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48362C9D34B600FBEF26 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +40,17 @@
 		C4DF47F82C9D2AB100FBEF26 /* ProductsIBK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsIBK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DF47FB2C9D2AB100FBEF26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DF47FD2C9D2AB100FBEF26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4DF47FF2C9D2AB100FBEF26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C4DF48022C9D2AB100FBEF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4DF48042C9D2AB200FBEF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DF48072C9D2AB200FBEF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C4DF48092C9D2AB200FBEF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DF48092C9D2AB200FBEF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ProductsIBK/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		C4DF480E2C9D2AB200FBEF26 /* ProductsIBKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsIBKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DF48122C9D2AB200FBEF26 /* ProductsIBKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsIBKTests.swift; sourceTree = "<group>"; };
 		C4DF48182C9D2AB200FBEF26 /* ProductsIBKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsIBKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DF481C2C9D2AB200FBEF26 /* ProductsIBKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsIBKUITests.swift; sourceTree = "<group>"; };
 		C4DF481E2C9D2AB200FBEF26 /* ProductsIBKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsIBKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4DF482F2C9D30F900FBEF26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C4DF48362C9D34B600FBEF26 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,9 @@
 		C4DF47FA2C9D2AB100FBEF26 /* ProductsIBK */ = {
 			isa = PBXGroup;
 			children = (
-				C4DF47FB2C9D2AB100FBEF26 /* AppDelegate.swift */,
-				C4DF47FD2C9D2AB100FBEF26 /* SceneDelegate.swift */,
-				C4DF47FF2C9D2AB100FBEF26 /* ViewController.swift */,
-				C4DF48012C9D2AB100FBEF26 /* Main.storyboard */,
-				C4DF48042C9D2AB200FBEF26 /* Assets.xcassets */,
-				C4DF48062C9D2AB200FBEF26 /* LaunchScreen.storyboard */,
-				C4DF48092C9D2AB200FBEF26 /* Info.plist */,
+				C4DF482B2C9D2F5F00FBEF26 /* App */,
+				C4DF482C2C9D2FAF00FBEF26 /* Resources */,
+				C4DF482D2C9D304700FBEF26 /* Views */,
 			);
 			path = ProductsIBK;
 			sourceTree = "<group>";
@@ -125,6 +123,51 @@
 				C4DF481E2C9D2AB200FBEF26 /* ProductsIBKUITestsLaunchTests.swift */,
 			);
 			path = ProductsIBKUITests;
+			sourceTree = "<group>";
+		};
+		C4DF482B2C9D2F5F00FBEF26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF47FB2C9D2AB100FBEF26 /* AppDelegate.swift */,
+				C4DF47FD2C9D2AB100FBEF26 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4DF482C2C9D2FAF00FBEF26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF48012C9D2AB100FBEF26 /* Main.storyboard */,
+				C4DF48042C9D2AB200FBEF26 /* Assets.xcassets */,
+				C4DF48062C9D2AB200FBEF26 /* LaunchScreen.storyboard */,
+				C4DF48092C9D2AB200FBEF26 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C4DF482D2C9D304700FBEF26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF482E2C9D305E00FBEF26 /* TabBar */,
+				C4DF48352C9D34A200FBEF26 /* Menu */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4DF482E2C9D305E00FBEF26 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF482F2C9D30F900FBEF26 /* MainTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C4DF48352C9D34A200FBEF26 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF48362C9D34B600FBEF26 /* MenuViewController.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DF48342C9D327E00FBEF26 /* Main.storyboard in Resources */,
 				C4DF48052C9D2AB200FBEF26 /* Assets.xcassets in Resources */,
 				C4DF48082C9D2AB200FBEF26 /* Base in Resources */,
-				C4DF48032C9D2AB100FBEF26 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DF48002C9D2AB100FBEF26 /* ViewController.swift in Sources */,
 				C4DF47FC2C9D2AB100FBEF26 /* AppDelegate.swift in Sources */,
 				C4DF47FE2C9D2AB100FBEF26 /* SceneDelegate.swift in Sources */,
+				C4DF48302C9D30F900FBEF26 /* MainTabBarController.swift in Sources */,
+				C4DF48372C9D34B600FBEF26 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +488,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZS673XW4LM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProductsIBK/Info.plist;
+				INFOPLIST_FILE = ProductsIBK/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,7 +516,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZS673XW4LM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProductsIBK/Info.plist;
+				INFOPLIST_FILE = ProductsIBK/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

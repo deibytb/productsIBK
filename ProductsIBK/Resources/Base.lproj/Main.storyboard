@@ -11,7 +11,7 @@
         <!--Menú-->
         <scene sceneID="ULb-z7-hGj">
             <objects>
-                <viewController id="Amg-LG-SUp" sceneMemberID="viewController">
+                <viewController id="Amg-LG-SUp" customClass="MenuViewController" customModule="ProductsIBK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EXw-hB-F4h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menú" id="2jB-be-DOU"/>
+                    <connections>
+                        <outlet property="colorWell" destination="F3c-bo-2MA" id="x8s-bW-Loc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xww-RF-TJp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="1276" y="-238"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="Xq3-4i-xo7">
             <objects>
-                <tabBarController id="KX3-5C-Mgk" sceneMemberID="viewController">
+                <tabBarController id="KX3-5C-Mgk" customClass="MainTabBarController" customModule="ProductsIBK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T5F-Iw-8Xi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
