@@ -9,12 +9,17 @@ import Foundation
 
 class ProductListViewModel {
     
-    private let productRepository = ProductRepository()
+    private let productRepository: ProductRepository
     private(set) var products: [Product] = []
-    private var currentPage = 0
-    private let limit = 10
-    private var isLoading = false
-    var hasMoreProducts = true
+    private(set) var currentPage: Int = 0
+    private let limit: Int
+    var isLoading: Bool = false
+    var hasMoreProducts: Bool = true
+    
+    init(productRepository: ProductRepository = ProductRepository(), limit: Int = 10) {
+        self.productRepository = productRepository
+        self.limit = limit
+    }
     
     func fetchProducts(completion: @escaping () -> Void) {
         guard !isLoading && hasMoreProducts else { return }
