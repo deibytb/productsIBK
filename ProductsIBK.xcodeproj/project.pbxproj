@@ -17,6 +17,9 @@
 		C4DF48302C9D30F900FBEF26 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF482F2C9D30F900FBEF26 /* MainTabBarController.swift */; };
 		C4DF48342C9D327E00FBEF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DF48012C9D2AB100FBEF26 /* Main.storyboard */; };
 		C4DF48372C9D34B600FBEF26 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48362C9D34B600FBEF26 /* MenuViewController.swift */; };
+		C4DF483A2C9D3CD600FBEF26 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48392C9D3CD600FBEF26 /* MainTabBarViewModel.swift */; };
+		C4DF483C2C9D3EA500FBEF26 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF483B2C9D3EA500FBEF26 /* MenuViewModel.swift */; };
+		C4DF48422C9D41C800FBEF26 /* ThemeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DF48412C9D41C800FBEF26 /* ThemeStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		C4DF481E2C9D2AB200FBEF26 /* ProductsIBKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsIBKUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C4DF482F2C9D30F900FBEF26 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C4DF48362C9D34B600FBEF26 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C4DF48392C9D3CD600FBEF26 /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
+		C4DF483B2C9D3EA500FBEF26 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		C4DF48412C9D41C800FBEF26 /* ThemeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				C4DF482B2C9D2F5F00FBEF26 /* App */,
+				C4DF482D2C9D304700FBEF26 /* Modules */,
 				C4DF482C2C9D2FAF00FBEF26 /* Resources */,
-				C4DF482D2C9D304700FBEF26 /* Views */,
+				C4DF483D2C9D3FCA00FBEF26 /* Utils */,
 			);
 			path = ProductsIBK;
 			sourceTree = "<group>";
@@ -145,18 +152,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C4DF482D2C9D304700FBEF26 /* Views */ = {
+		C4DF482D2C9D304700FBEF26 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				C4DF482E2C9D305E00FBEF26 /* TabBar */,
 				C4DF48352C9D34A200FBEF26 /* Menu */,
 			);
-			path = Views;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		C4DF482E2C9D305E00FBEF26 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				C4DF48392C9D3CD600FBEF26 /* MainTabBarViewModel.swift */,
 				C4DF482F2C9D30F900FBEF26 /* MainTabBarController.swift */,
 			);
 			path = TabBar;
@@ -165,9 +173,26 @@
 		C4DF48352C9D34A200FBEF26 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				C4DF483B2C9D3EA500FBEF26 /* MenuViewModel.swift */,
 				C4DF48362C9D34B600FBEF26 /* MenuViewController.swift */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		C4DF483D2C9D3FCA00FBEF26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF483E2C9D401000FBEF26 /* Helpers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C4DF483E2C9D401000FBEF26 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C4DF48412C9D41C800FBEF26 /* ThemeStorage.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DF483A2C9D3CD600FBEF26 /* MainTabBarViewModel.swift in Sources */,
 				C4DF47FC2C9D2AB100FBEF26 /* AppDelegate.swift in Sources */,
 				C4DF47FE2C9D2AB100FBEF26 /* SceneDelegate.swift in Sources */,
+				C4DF483C2C9D3EA500FBEF26 /* MenuViewModel.swift in Sources */,
+				C4DF48422C9D41C800FBEF26 /* ThemeStorage.swift in Sources */,
 				C4DF48302C9D30F900FBEF26 /* MainTabBarController.swift in Sources */,
 				C4DF48372C9D34B600FBEF26 /* MenuViewController.swift in Sources */,
 			);
